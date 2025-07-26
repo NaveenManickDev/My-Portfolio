@@ -1,5 +1,6 @@
 import myPhoto from '../assets/openart-image_PeyveN2Y_1753408009330_raw - Copy.png';
 import { isMobile } from "react-device-detect";
+import { toast } from "react-toastify";
 export default function About() {
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -12,8 +13,14 @@ export default function About() {
     // Show alert only on mobile
     if (isMobile) {
       setTimeout(() => {
-        alert("CV downloaded successfully!");
-      }, 1000); // Delay for better UX
+        toast.success("CV downloaded successfully!", {
+          style: {
+            background: "#0A101E",
+            color: "#fff",
+            fontSize: "14px",
+          },
+        });
+      }, 1000);
     }
   };
   return (
