@@ -2,7 +2,7 @@ import myPhoto from '../assets/openart-image_PeyveN2Y_1753408009330_raw - Copy.p
 import { isMobile } from "react-device-detect";
 import { toast } from "react-toastify";
 export default function About() {
-  const handleDownload = () => {
+   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/CV.pdf";
     link.download = "Naveen-CV.pdf";
@@ -10,17 +10,18 @@ export default function About() {
     link.click();
     document.body.removeChild(link);
 
-    // Show alert only on mobile
+    // ✅ Show success toast after delay (mobile only)
     if (isMobile) {
       setTimeout(() => {
-        toast.success("CV downloaded successfully!", {
+        toast.success("✅ CV downloaded successfully!", {
           style: {
             background: "#0A101E",
             color: "#fff",
             fontSize: "14px",
+            borderRadius: "8px",
           },
         });
-      }, 1000);
+      }, 500);
     }
   };
   return (

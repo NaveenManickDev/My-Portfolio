@@ -8,6 +8,9 @@ import Footer from "../components/Footer";
 import Resume from "../components/Resume";
 import Services from "../components/Services";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Home() {
   return (
     <div className="bg-[#070D1B] text-gray-900  scroll-smooth">
@@ -20,6 +23,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer />
+      <ToastContainer position="bottom-center" autoClose={3000} />
     </div>
   );
 }
