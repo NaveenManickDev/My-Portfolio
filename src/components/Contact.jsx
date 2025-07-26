@@ -8,10 +8,10 @@ import {
 } from "lucide-react";
 
 const socialLinks = [
-  { icon: <Linkedin size={18} />, label: "LinkedIn", url: "https://linkedin.com" },
+  { icon: <Linkedin size={18} />, label: "LinkedIn", url: "https://www.linkedin.com/in/naveen-devhub/" },
   { icon: <Facebook size={18} />, label: "Facebook", url: "https://facebook.com" },
-  { icon: <Github size={18} />, label: "GitHub", url: "https://github.com" },
-  { icon: <Mail size={18} />, label: "Email", url: "mailto:yourname@example.com" },
+  { icon: <Github size={18} />, label: "GitHub", url: "https://github.com/NaveenManickDev" },
+  { icon: <Mail size={18} />, label: "Email", url: "naveenbreaker93@gmail.com" },
 ];
 
 export default function Contact() {
