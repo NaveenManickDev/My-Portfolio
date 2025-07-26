@@ -11,19 +11,19 @@ export default function About() {
     document.body.removeChild(link);
 
     // ✅ Show success toast after delay (mobile only)
-    if (isMobile) {
-      setTimeout(() => {
-        toast.success("✅ CV downloaded successfully!", {
-          style: {
-            background: "#0A101E",
-            color: "#fff",
-            fontSize: "14px",
-            borderRadius: "8px",
-          },
-        });
-      }, 500);
-    }
-  };
+   if (isMobile) {
+    setTimeout(() => {
+      toast.success("✅ CV downloaded successfully!", {
+        style: {
+          background: "#0A101E",
+          color: "#fff",
+          fontSize: "14px",
+          borderRadius: "8px",
+        },
+      });
+    }, 500);
+  }
+};
   return (
     <section id="about" className="px-6 py-12 bg-[#070D1B] text-white" data-aos="fade-down">
        {/* Background Faded Text */}
