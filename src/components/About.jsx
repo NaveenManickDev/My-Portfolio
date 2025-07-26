@@ -1,5 +1,21 @@
 import myPhoto from '../assets/openart-image_PeyveN2Y_1753408009330_raw - Copy.png';
+import { isMobile } from "react-device-detect";
 export default function About() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/CV.pdf";
+    link.download = "Naveen-CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Show alert only on mobile
+    if (isMobile) {
+      setTimeout(() => {
+        alert("CV downloaded successfully!");
+      }, 1000); // Delay for better UX
+    }
+  };
   return (
     <section id="about" className="px-6 py-12 bg-[#070D1B] text-white" data-aos="fade-down">
        {/* Background Faded Text */}
@@ -48,7 +64,7 @@ export default function About() {
          <div className="flex gap-4">
           {/* View Resume */}
           <a
-            href="/public/Naveen-Resume.pdf"
+            href="/Naveen-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-gray-600 text-white rounded-full hover:bg-gray-700 transition-all duration-300"
@@ -57,13 +73,12 @@ export default function About() {
           </a>
 
           {/* Download CV */}
-          <a
-            href="/CV.pdf"
-            download="Naveen-CV.pdf"
-            className="inline-block px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300"
-          >
-          Download CV
-          </a>
+           <button
+      onClick={handleDownload}
+      className="inline-block px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300"
+    >
+      Download CV
+    </button>
         </div>
       </div>
     </div>
