@@ -48,7 +48,7 @@ export default function About() {
          <div className="flex gap-4">
           {/* View Resume */}
           <a
-            href="../../public/Naveen Resume.pdf  "
+            href="/public/Naveen Resume.pdf  "
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-gray-600 text-white rounded-full hover:bg-gray-700 transition-all duration-300"
@@ -58,7 +58,7 @@ export default function About() {
 
           {/* Download CV */}
           <a
-            href="../../public/CV.pdf"
+            href="/public/CV.pdf"
             download
             className="inline-block px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300"
           >
