@@ -11,7 +11,7 @@ const socialLinks = [
   { icon: <Linkedin size={18} />, label: "LinkedIn", url: "https://www.linkedin.com/in/naveen-devhub/" },
   { icon: <Facebook size={18} />, label: "Facebook", url: "https://facebook.com" },
   { icon: <Github size={18} />, label: "GitHub", url: "https://github.com/NaveenManickDev" },
-  { icon: <Mail size={18} />, label: "Email", url: "naveenbreaker93@gmail.com" },
+  { icon: <Mail size={18} />, label: "Email", url: "mailto:naveenbreaker93@gmail.com" },
 ];
 
 export default function Contact() {
