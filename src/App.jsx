@@ -1,21 +1,35 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import CursorFollower from "./components/CursorFollower"; 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
+    // AOS Animation Initialization
     AOS.init({
-      duration: 1000, // animation duration in ms
-      once: false,     // run animation only once
-      easing: "ease-in-out", 
+      duration: 1000,
+      once: false,
+      easing: "ease-in-out",
     });
+
+    // Check for mobile view
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Treat <768px as mobile
+    };
+
+    handleResize(); // initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return (
     <BrowserRouter>
-      <CursorFollower /> {<CursorFollower />}
+      {!isMobile && <CursorFollower />}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
