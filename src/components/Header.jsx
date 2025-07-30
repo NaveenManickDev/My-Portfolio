@@ -11,7 +11,12 @@ export default function Header() {
     >
       <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 w-full max-w-7xl">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-white">Naveen</h1>
+        <a
+          href="#hero"
+          className="text-4xl font-bold text-yellow-300 animate-flicker"
+        >
+          Naveen
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden sm:flex items-center space-x-6">
@@ -45,9 +50,8 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       <div
-        className={`sm:hidden fixed top-16 left-0 w-full bg-[#0A101E] text-white p-6 shadow-lg transition-all duration-300 z-40 ${
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
-        }`}
+        className={`sm:hidden fixed top-16 left-0 w-full bg-[#0A101E] text-white p-6 shadow-lg transition-all duration-300 z-40 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
+          }`}
       >
         <div className="flex flex-col gap-4">
           {["about", "skills", "projects", "contact"].map((id) => (
@@ -61,10 +65,10 @@ export default function Header() {
             </a>
           ))}
           <div className="flex items-center gap-2 mt-4">
-             <a href="tel:+9190959 41447" className="flex items-center gap-2 text-white text-sm">
-            <Phone size={18} />
-            <span className="text-yellow-400 font-bold">+91 90959 41447</span>
-          </a>
+            <a href="tel:+9190959 41447" className="flex items-center gap-2 text-white text-sm">
+              <Phone size={18} />
+              <span className="text-yellow-400 font-bold">+91 90959 41447</span>
+            </a>
           </div>
         </div>
       </div>

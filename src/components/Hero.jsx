@@ -7,31 +7,31 @@ export default function Hero() {
   const lastScroll = useRef(0);
 
   useEffect(() => {
-  const handleScroll = () => {
-    const current = window.scrollY;
+    const handleScroll = () => {
+      const current = window.scrollY;
 
-    if (current > lastScroll.current) {
-      // scroll down → move right
-      animate(x, 500, { type: "spring", stiffness: 50,  });
-    } else {
-      // scroll up → move left
-      animate(x, -300, { type: "spring", stiffness: 50,  });
-    }
+      if (current > lastScroll.current) {
+        // scroll down → move right
+        animate(x, 500, { type: "spring", stiffness: 50, });
+      } else {
+        // scroll up → move left
+        animate(x, -300, { type: "spring", stiffness: 50, });
+      }
 
-    // snap back to center
-    setTimeout(() => {
-      animate(x, 0, { type: "spring", stiffness: 60,});
-    }, 200); // slight delay before returning to center
-    lastScroll.current = current;
-  };
+      // snap back to center
+      setTimeout(() => {
+        animate(x, 0, { type: "spring", stiffness: 60, });
+      }, 200); // slight delay before returning to center
+      lastScroll.current = current;
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <section
-      className="min-h-fit flex flex-col gap-8 md:flex-row items-center md:justify-between px-4 sm:px-6 pt-28 md:pt-36 pb-10 bg-[#070D1B] text-white mx-auto max-w-7xl"
+    <section id="hero"
+      className=" min-h-fit flex flex-col gap-8 md:flex-row items-center md:justify-between px-4 sm:px-6 pt-28 md:pt-36 pb-10 bg-[#070D1B] text-white mx-auto max-w-7xl"
       data-aos="fade-right"
     >
       {/* Left Text */}
