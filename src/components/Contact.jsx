@@ -18,19 +18,19 @@ export default function Contact() {
   return (
     <section id="contact" className="max-w-7xl mx-auto px-6 py-12 bg-[#070D1B] text-white" data-aos="fade-down">
       <div className="max-w-6xl mx-auto">
-         {/* Background Faded Text */}
-      <h2 className="absolute top-5 left-1/2 -translate-x-1/2 text-[80px] sm:text-[80px] font-extrabold text-white/5 uppercase pointer-events-none select-none">
-         CONTACT
-      </h2>
+        {/* Background Faded Text */}
+        <h2 className="absolute top-5 left-1/2 -translate-x-1/2 text-[80px] sm:text-[80px] font-extrabold text-white/5 uppercase pointer-events-none select-none">
+          CONTACT
+        </h2>
 
-     
-      {/* Section Title */}
-      <h3 className="text-2xl sm:text-3xl font-bold text-yellow-400 text-center mb-12 z-10 relative">
-        CONTACT
-        <div className="mt-2 h-[2px] w-32 mx-auto bg-gray-500 relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-[2px] bg-yellow-400"></div>
-        </div>
-      </h3>
+
+        {/* Section Title */}
+        <h3 className="text-2xl sm:text-3xl font-bold text-yellow-400 text-center mb-12 z-10 relative">
+          CONTACT
+          <div className="mt-2 h-[2px] w-32 mx-auto bg-gray-500 relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-[2px] bg-yellow-400"></div>
+          </div>
+        </h3>
 
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Contact Form */}
@@ -96,8 +96,7 @@ export default function Contact() {
                 <div>
                   <p className="font-medium text-white">Address</p>
                   <p>
-                    Chinniyam Palayam(po)<br />
-                    Modakkurichi (via), Erode-638104
+                    Erode, Tamil Nadu, India
                   </p>
                 </div>
               </div>
@@ -105,28 +104,28 @@ export default function Contact() {
 
             {/* Social Icons */}
             <p className="mt-6 mb-2 text-blue-600 font-medium">Visit my social profile and get connected</p>
-             <div className="flex gap-4">
-      {socialLinks.map((link, idx) => (
-        <a
-          key={idx}
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex items-center transition-all duration-300"
-        >
-          <div className="flex items-center border border-gray-600 hover:border-yellow-400 rounded-full transition-all duration-300 pl-3 pr-3 group-hover:pr-5 bg-[#0E121B]">
-            {/* Icon Circle */}
-            <div className="w-10 h-10 flex items-center justify-center rounded-full">
-              {link.icon}
+            <div className="flex gap-4">
+              {socialLinks.map((link, idx) => (
+                <a
+                  key={idx}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center transition-all duration-300"
+                >
+                  <div className="flex items-center border border-gray-600 hover:border-yellow-400 rounded-full transition-all duration-300 pl-3 pr-3 group-hover:pr-5 bg-[#0E121B]">
+                    {/* Icon Circle */}
+                    <div className="w-10 h-10 flex items-center justify-center rounded-full">
+                      {link.icon}
+                    </div>
+                    {/* Expanding Text */}
+                    <span className="ml-2 text-sm text-white opacity-0 max-w-0 group-hover:max-w-xs group-hover:opacity-100 overflow-hidden whitespace-nowrap transition-all duration-300">
+                      {link.label}
+                    </span>
+                  </div>
+                </a>
+              ))}
             </div>
-            {/* Expanding Text */}
-            <span className="ml-2 text-sm text-white opacity-0 max-w-0 group-hover:max-w-xs group-hover:opacity-100 overflow-hidden whitespace-nowrap transition-all duration-300">
-              {link.label}
-            </span>
-          </div>
-        </a>
-      ))}
-    </div>
           </div>
         </div>
       </div>

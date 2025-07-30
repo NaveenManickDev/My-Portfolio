@@ -18,10 +18,10 @@ export default function Skills() {
     >
       {/* Background Faded Text */}
       <h2 className="absolute top-12 left-1/2 -translate-x-1/2 text-[80px] sm:text-[80px] font-extrabold text-white/5 uppercase pointer-events-none select-none">
-         Skills
+        Skills
       </h2>
 
-     
+
       {/* Section Title */}
       <h3 className="text-2xl sm:text-3xl font-bold text-yellow-400 text-center mb-12 z-10 relative">
         SKILLS
@@ -31,42 +31,42 @@ export default function Skills() {
       </h3>
 
       <div className="flex flex-col lg:flex-row gap-10 z-10 relative">
-  {/* Left Paragraph */}
-  <div className="w-full lg:w-1/2 text-gray-300 flex items-center">
-    <p className="mb-6 leading-relaxed">
-      The skills I've developed reflect my hands-on experience building modern, 
-      responsive web interfaces using React, Vite, and Tailwind CSS. From replicating 
-      real-world UIs like the Netflix template to implementing login and signup flows, 
-      form validations, and localStorage-based data handling, I focus on delivering 
-      clean, efficient, and user-friendly frontend solutions.
-    </p>
-  </div>
-
-  {/* Right Skill Bars */}
-  <div className="w-full lg:w-1/2 space-y-6">
-    {skills.map((skill, index) => (
-      <div key={index}>
-        <div className="flex justify-between mb-1">
-          <span className="font-medium text-gray-200">{skill.name}</span>
-          <span className="text-sm text-gray-400">{skill.percent}%</span>
+        {/* Left Paragraph */}
+        <div className="w-full lg:w-1/2 text-gray-300 flex items-center">
+          <p className="text-2xl mb-6 leading-relaxed">
+            The skills I've developed reflect my hands-on experience building modern,
+            responsive web interfaces using React, Vite, and Tailwind CSS. From replicating
+            real-world UIs like the Netflix template to implementing login and signup flows,
+            form validations, and localStorage-based data handling, I focus on delivering
+            clean, efficient, and user-friendly frontend solutions.
+          </p>
         </div>
-        <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
-          <motion.div
-            initial={{ width: 0 }}
-            whileInView={{ width: `${skill.percent}%` }}
-            transition={{
-              duration: 1,
-              delay: index * 0.2,
-              ease: "easeOut",
-            }}
-            viewport={{ once: false }}
-            className="bg-yellow-400 h-3 rounded-full"
-          />
+
+        {/* Right Skill Bars */}
+        <div className="w-full lg:w-1/2 space-y-6">
+          {skills.map((skill, index) => (
+            <div key={index}>
+              <div className="flex justify-between mb-1">
+                <span className="font-medium text-gray-200">{skill.name}</span>
+                <span className="text-sm text-gray-400">{skill.percent}%</span>
+              </div>
+              <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${skill.percent}%` }}
+                  transition={{
+                    duration: 1,
+                    delay: index * 0.2,
+                    ease: "easeOut",
+                  }}
+                  viewport={{ once: false }}
+                  className="bg-yellow-400 h-3 rounded-full"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
     </section>
   );
 }

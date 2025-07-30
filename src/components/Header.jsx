@@ -61,10 +61,10 @@ export default function Header() {
             </a>
           ))}
           <div className="flex items-center gap-2 mt-4">
-            <Phone size={18} className="text-white" />
-            <span className="text-yellow-400 font-bold">
-              +91 90959 41447
-            </span>
+             <a href="tel:+9190959 41447" className="flex items-center gap-2 text-white text-sm">
+            <Phone size={18} />
+            <span className="text-yellow-400 font-bold">+91 90959 41447</span>
+          </a>
           </div>
         </div>
       </div>

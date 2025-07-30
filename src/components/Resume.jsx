@@ -9,13 +9,13 @@ const educationList = [
   },
   {
     title: "Frontend Development with React",
-    duration: "2024",
+    duration: "2025",
     place: "EMC",
     desc: "Covered components, props, state, routing in React. Built responsive projects using modern tools like Vite and Tailwind CSS.",
   },
   {
     title: "Prompt Engineering for AI",
-    duration: "2024",
+    duration: "2025",
     place: "EMC",
     desc: "Learned how to write effective prompts for AI tools like ChatGPT. Explored use cases for productivity and creative problem solving.",
   },
