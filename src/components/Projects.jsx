@@ -52,12 +52,12 @@ export default function Projects() {
       className="max-w-7xl mx-auto px-6 py-16 bg-[#070D1B] text-white"
       data-aos="fade-up"
     >
-       {/* Background Faded Text */}
+      {/* Background Faded Text */}
       <h2 className="absolute top-8 left-1/2 -translate-x-1/2 text-[80px] sm:text-[80px] font-extrabold text-white/5 uppercase pointer-events-none select-none">
-         PROJECT
+        PROJECT
       </h2>
 
-     
+
       {/* Section Title */}
       <h3 className="text-2xl sm:text-3xl font-bold text-yellow-400 text-center mb-12 z-10 relative">
         PROJECT
@@ -84,11 +84,11 @@ export default function Projects() {
               alt={project.title}
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="p-5">
-              <h4 className="text-xl font-semibold mb-2 text-yellow-400">
+            <div className="p-5 flex flex-col items-center text-center">
+              <h4 className="text-2xl font-semibold mb-2 text-yellow-400">
                 {project.title}
               </h4>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-400 text-base leading-relaxed">
                 {project.description}
               </p>
             </div>

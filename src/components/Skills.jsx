@@ -9,6 +9,8 @@ export default function Skills() {
     { name: "Tailwind CSS", percent: 90 },
     { name: "UX Design", percent: 90 },
     { name: "API Integration", percent: 65 },
+    { name: "Git & GitHub", percent: 70 },
+    { name: "MongoDB", percent: 60 },
   ];
 
   return (
@@ -32,13 +34,29 @@ export default function Skills() {
 
       <div className="flex flex-col lg:flex-row gap-10 z-10 relative">
         {/* Left Paragraph */}
-        <div className="w-full lg:w-1/2 text-gray-300 flex items-center">
-          <p className="text-2xl mb-6 leading-relaxed">
-            The skills I've developed reflect my hands-on experience building modern,
-            responsive web interfaces using React, Vite, and Tailwind CSS. From replicating
-            real-world UIs like the Netflix template to implementing login and signup flows,
-            form validations, and localStorage-based data handling, I focus on delivering
-            clean, efficient, and user-friendly frontend solutions.
+        <div className="w-full lg:w-1/2 text-gray-300 flex flex-col items-start">
+          <h1 className="text-3xl font-bold text-center mb-6 leading-relaxed">
+            Below are the skills I've gained through practical experience in this field.
+          </h1>
+          <p className="text-lg mb-6 leading-relaxed">
+            My skill set is built on hands-on experience
+            creating modern, responsive web interfaces
+            using React, Vite, and Tailwind CSS.
+            I’ve worked on replicating real-world UIs,
+            such as a Netflix-inspired design,
+            and implemented login and signup flows,
+            form validations, and efficient
+            localStorage-based data handling.
+            I focus on delivering clean, user-friendly frontend solutions.
+            <br /><br />
+            Additionally, I'm experienced in managing component-based architectures,
+            optimizing performance using React hooks and lazy loading,
+            and integrating animations with AOS and Framer Motion
+            for enhanced user interactions.
+            I regularly follow mobile-first and accessibility-first design principles,
+            and I’m comfortable working in team projects using Git, GitHub, and tools that help manage and organize tasks clearly.
+            My goal is always to create intuitive and scalable UIs
+            that solve real-world problems effectively.
           </p>
         </div>
 

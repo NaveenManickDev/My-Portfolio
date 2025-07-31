@@ -36,18 +36,22 @@ export default function Hero() {
     >
       {/* Left Text */}
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-blue-500">
-          Hi, I'm Naveen
-        </h2>
-        <p className="text-lg sm:text-xl text-gray-300 mb-6 max-w-xl mx-auto md:mx-0">
-          A Passionate Frontend Developer
-        </p>
-        <a
-          href="#contact"
-          className="inline-block px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
-        >
-          Hire Me
-        </a>
+        <div className="text-white p-6">
+          <p className="text-yellow-400 text-3xl mb-2">Hello, I’m</p>
+          <h1 className="text-8xl font-extrabold leading-none">
+            Naveen
+            <br />
+            Kumar
+          </h1>
+          <p className="text-gray-400 text-2xl mt-5 mb-6">A Passionate Frontend Developer</p>
+
+          <a
+            href="#contact"
+            className="inline-block px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
+          >
+            Hire Me
+          </a>
+        </div>
       </div>
 
       {/* Right Image */}

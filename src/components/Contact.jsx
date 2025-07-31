@@ -8,10 +8,10 @@ import {
 } from "lucide-react";
 
 const socialLinks = [
-  { icon: <Linkedin size={18} />, label: "LinkedIn", url: "https://www.linkedin.com/in/naveen-devhub/" },
-  { icon: <Facebook size={18} />, label: "Facebook", url: "https://facebook.com" },
-  { icon: <Github size={18} />, label: "GitHub", url: "https://github.com/NaveenManickDev" },
-  { icon: <Mail size={18} />, label: "Email", url: "mailto:naveenbreaker93@gmail.com" },
+  { icon: <Linkedin size={20} />, label: "LinkedIn", url: "https://www.linkedin.com/in/naveen-devhub/" },
+  { icon: <Facebook size={20} />, label: "Facebook", url: "https://facebook.com" },
+  { icon: <Github size={20} />, label: "GitHub", url: "https://github.com/NaveenManickDev" },
+  { icon: <Mail size={20} />, label: "Email", url: "mailto:naveenbreaker93@gmail.com" },
 ];
 
 export default function Contact() {
@@ -35,30 +35,30 @@ export default function Contact() {
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Contact Form */}
           <div className="w-full lg:w-1/2">
-            <h4 className="text-2xl font-semibold mb-4">Just say Hello</h4>
+            <h4 className="text-3xl font-semibold mb-4">Just say Hello</h4>
             <form className="space-y-4">
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-3 border border-gray-600 rounded-md bg-[#0A101E] focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="text-lg w-full p-3 border border-gray-600 rounded-md bg-[#0A101E] focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full p-3 border border-gray-600 rounded-md bg-[#0A101E] focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="text-lg w-full p-3 border border-gray-600 rounded-md bg-[#0A101E] focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="text"
                 placeholder="Your Subject"
-                className="w-full p-3 border border-gray-600 rounded-md bg-[#0A101E] focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="text-lg w-full p-3 border border-gray-600 rounded-md bg-[#0A101E] focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <textarea
                 placeholder="Your Message"
-                className="w-full p-3 border border-gray-600 rounded-md bg-[#0A101E] h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="text-lg w-full p-3 border border-gray-600 rounded-md bg-[#0A101E] h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-600"
               ></textarea>
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+                className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition mx-auto block"
               >
                 Send Message
               </button>
@@ -67,8 +67,8 @@ export default function Contact() {
 
           {/* Contact Info */}
           <div className="w-full lg:w-1/2 text-gray-300">
-            <h4 className="text-2xl font-semibold mb-4 text-white">Contact Info</h4>
-            <p className="mb-6 leading-relaxed text-sm sm:text-base">
+            <h4 className="text-3xl font-semibold mb-4 text-white">Contact Info</h4>
+            <p className="mb-6 leading-relaxed text-sm sm:text-xl">
               Feel free to reach out to me anytime. I’m available for freelance work and collaboration.
             </p>
 
@@ -76,8 +76,8 @@ export default function Contact() {
               <div className="flex items-start gap-3">
                 <Mail className="text-blue-600 mt-1" />
                 <div>
-                  <p className="font-medium text-white">Email</p>
-                  <p>naveenbreaker93@gmail.com</p>
+                  <p className="font-medium text-white text-lg">Email</p>
+                  <p className="text-lg">naveenbreaker93@gmail.com</p>
                   {/* <p>info@support.com</p> */}
                 </div>
               </div>
@@ -85,17 +85,17 @@ export default function Contact() {
               <div className="flex items-start gap-3">
                 <Phone className="text-blue-600 mt-1" />
                 <div>
-                  <p className="font-medium text-white">Phone</p>
-                  <p>+91 90959 41447</p>
-                  <p>+91 82483 00709</p>
+                  <p className="font-medium text-white text-lg">Phone</p>
+                  <p className="text-lg">+91 90959 41447</p>
+                  <p className="text-lg">+91 82483 00709</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
                 <MapPin className="text-blue-600 mt-1" />
                 <div>
-                  <p className="font-medium text-white">Address</p>
-                  <p>
+                  <p className="font-medium text-white text-lg">Address</p>
+                  <p className="text-lg">
                     Erode, Tamil Nadu, India
                   </p>
                 </div>

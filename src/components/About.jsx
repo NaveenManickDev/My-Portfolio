@@ -51,15 +51,15 @@ export default function About() {
 
         {/* Right: Content */}
         <div className="w-full md:w-2/3">
-          <h3 className="text-2xl sm:text-3xl font-bold mb-3 text-white">Hi There! I'm Naveen Kumar</h3>
-          <p className="text-lg sm:text-xl text-blue-400 mb-3">Frontend Developer</p>
-          <p className="text-gray-300 mb-6 max-w-screen-md leading-relaxed">
+          <h3 className="text-2xl sm:text-4xl font-bold mb-3 text-white">Hi There! I'm Naveen Kumar</h3>
+          <p className="text-lg sm:text-2xl font-bold text-blue-400 mb-3">Frontend Developer</p>
+          <p className="text-gray-300 mb-6 max-w-screen-md leading-relaxed text-lg">
             I am a Frontend Developer with a strong focus on creating responsive and interactive user interfaces.
             I combine design and development to build seamless, accessible, and engaging digital experiences that
             attract, inspire, and motivate users to interact meaningfully with applications.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 text-gray-300 mb-6 text-sm sm:text-base">
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 text-gray-300 mb-6 text-sm sm:text-lg">
             <p><span className="font-semibold text-white">Birthday:</span> May 04, 1993</p>
             <p><span className="font-semibold text-white">Phone:</span> +91 90959 41447</p>
             <p><span className="font-semibold text-white">Email:</span> naveenbreaker93@gmail.com</p>

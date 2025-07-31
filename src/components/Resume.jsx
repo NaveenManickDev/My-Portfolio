@@ -72,11 +72,12 @@ export default function Resume() {
           <div className="space-y-6">
             {educationList.map((edu, idx) => (
               <div key={idx}>
-                <h5 className="text-lg font-semibold text-yellow-300">{edu.title}</h5>
-                <p className="text-sm text-gray-400">
-                  {edu.duration} | {edu.place}
+                <h5 className="text-2xl font-semibold text-yellow-300">{edu.title}</h5>
+                <p className="text-lg text-gray-400">
+                  {edu.duration}
                 </p>
-                <p className="mt-2 text-sm text-gray-400 leading-relaxed">{edu.desc}</p>
+                <p className="text-lg py-2"> {edu.place}</p>
+                <p className="mt-2 text-lg text-gray-400 leading-relaxed">{edu.desc}</p>
               </div>
             ))}
           </div>
@@ -91,16 +92,17 @@ export default function Resume() {
           <div className="space-y-6">
             {experienceList.map((exp, idx) => (
               <div key={idx}>
-                <h5 className="text-lg font-semibold text-yellow-300">{exp.title}</h5>
-                <p className="text-sm text-gray-400">
-                  {exp.duration} | {exp.place}
+                <h5 className="text-2xl font-semibold text-yellow-300">{exp.title}</h5>
+                <p className="text-lg text-gray-400">
+                  {exp.duration}
                 </p>
-                <p className="mt-2 text-sm text-gray-400 leading-relaxed">{exp.desc}</p>
+                <p className="text-lg py-2">{exp.place}</p>
+                <p className="mt-2 text-lg text-gray-400 leading-relaxed">{exp.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

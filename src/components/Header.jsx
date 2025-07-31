@@ -21,16 +21,16 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden sm:flex items-center space-x-6">
           <a href="#about" className="hover:underline text-white">
-            About
+            ABOUT
           </a>
           <a href="#skills" className="hover:underline text-white">
-            Skills
+            SKILLS
           </a>
           <a href="#projects" className="hover:underline text-white">
-            Projects
+            PROJECTS
           </a>
           <a href="#contact" className="hover:underline text-white">
-            Contact
+            CONTACT
           </a>
           <a href="tel:+9190959 41447" className="flex items-center gap-2 text-white text-sm">
             <Phone size={18} />
